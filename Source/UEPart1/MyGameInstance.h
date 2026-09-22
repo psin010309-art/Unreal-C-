@@ -15,7 +15,15 @@ class UEPART1_API UMyGameInstance : public UGameInstance
 	GENERATED_BODY()
 
 public:
+	UMyGameInstance();
+
+public:
 	//게임 인스턴스 초기화 함수
 	virtual void Init() override;
+
+private:
+	UPROPERTY()
+	FString SchoolName;
 	
+
 };
